@@ -9,7 +9,10 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26200</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
     <used-behaviors />
     <used-effects />
     <configurations>
@@ -35,7 +38,77 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-folder name="UI">
+            <object-type name="StressBar_Left" sid="905374131016508">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="229533817738338" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\barYellow_horizontalLeft.png">
+                            <collision-poly>
+                                <point x="0.444444" y="0.0555556" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.444444" y="0.944444" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StressBar_Mid" sid="473266086233153">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277290018482964" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\barYellow_horizontalMid.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StressBar_Right" sid="745248733635469">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="381737832641510" speed="5">
+                        <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\barYellow_horizontalRight.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.444444" y="0.0555556" />
+                                <point x="0.666667" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.666667" y="0.833333" />
+                                <point x="0.444444" y="0.944444" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StatsPanel" sid="244035751620474">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="585513717170777" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\panel_brown.png">
+                            <collision-poly>
+                                <point x="0.0294118" y="0.0294118" />
+                                <point x="0.5" y="0.00980392" />
+                                <point x="0.970588" y="0.0294118" />
+                                <point x="0.990196" y="0.5" />
+                                <point x="0.970588" y="0.970588" />
+                                <point x="0.5" y="0.990196" />
+                                <point x="0.0294118" y="0.970588" />
+                                <point x="0.00980392" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="UIText" sid="884664638637247">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="MoneyAmountText" sid="670103249132744">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
