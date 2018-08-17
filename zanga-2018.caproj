@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors />
     <used-effects />
@@ -108,6 +109,33 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-type name="IndoorRoomTilemap" sid="591487264121954">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Game Assets\Kenney 2D Sprites\roguelike-indoor-pack\Spritesheet\roguelikeIndoor_transparent.png" />
+            <tiles />
+        </object-type>
+        <object-type name="RoomTilemap" sid="871426901859753">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Game Assets\Kenney 2D Sprites\roguelike-pack\Spritesheet\roguelikeSheet_transparent.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Player" sid="199508114855291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="947420183454752" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="0" name="WalkingFront" pingpong="0" repeatcount="1" repeatto="0" sid="467364580598034" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -116,6 +144,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>TilemapController.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
