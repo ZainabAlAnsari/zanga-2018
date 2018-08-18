@@ -135,6 +135,24 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Bed" sid="822902554132576">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249722063667296" speed="5">
+                        <frame duration="1" hotspotX="1.00277" hotspotY="0.497462" original-source="C:\Users\zaina\Desktop\model_D0.png">
+                            <collision-poly>
+                                <point x="0.0943135" y="0.115059" />
+                                <point x="0.499307" y="0.115059" />
+                                <point x="0.998613" y="0.00169205" />
+                                <point x="0.998613" y="0.998308" />
+                                <point x="0.499307" y="0.978003" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.499154" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
@@ -156,13 +174,9 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
         <layout>Game.xml</layout>
     </layout-folder>
-    <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>TilemapController.xml</event-sheet>
-    </event-folder>
+    <event-folder />
     <global-instances />
     <sounds-folder />
     <music-folder />
