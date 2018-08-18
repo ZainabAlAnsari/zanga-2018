@@ -2,7 +2,7 @@
 <c2layout>
     <name>Game</name>
     <sid>721184607312110</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>evGame</event-sheet>
     <size>
         <width>640</width>
         <height>480</height>

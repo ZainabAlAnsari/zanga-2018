@@ -3,11 +3,33 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evGame</name>
     <events>
-        <event-block sid="947677381463834">
+        <event-block sid="715785359608379">
             <conditions>
-                <condition behavior="8Direction" id="0" name="Is moving" sid="904276383698341" type="Player" />
+                <condition id="2" name="Key is down" sid="377063225349256" type="Keyboard">
+                    <param id="0" name="Key">66</param>
+                </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="831706169461344" type="Audio">
+                    <param id="0" name="Audio file">ouch_new</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="740519426715270">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="495174811688604" type="Player" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="186286690483439" type="Audio">
+                    <param id="0" name="Audio file">steps</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

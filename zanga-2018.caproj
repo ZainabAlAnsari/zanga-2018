@@ -10,6 +10,8 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
@@ -230,6 +232,12 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="804296954711237">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Keyboard" sid="589593691325715">
+            <plugin id="Keyboard" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -238,8 +246,31 @@
     <event-folder>
         <event-sheet>evGame.xml</event-sheet>
     </event-folder>
-    <global-instances />
-    <sounds-folder />
+    <global-instances>
+        <global-instance type="Audio" uid="31">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="32" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Explosion 3.m4a" />
+        <file name="Explosion 3.ogg" />
+        <file name="steps_new.m4a" />
+        <file name="ouch_new.m4a" />
+        <file name="ouch_new.ogg" />
+        <file name="steps.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
