@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
@@ -132,7 +133,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512854079395078" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\Game Assets\My Make\window_D0.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\zaina\Desktop\window.png">
                             <collision-poly>
                                 <point x="0.025" y="0.0273973" />
                                 <point x="0.975" y="0.0273973" />
@@ -152,7 +153,7 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194437366434750" speed="5">
-                        <frame duration="1" hotspotX="-0.00390625" hotspotY="-0.00257069" original-source="C:\Users\zaina\Desktop\stairs.png">
+                        <frame duration="1" hotspotX="-0.00390625" hotspotY="-0.00263158" original-source="C:\Users\zaina\Desktop\stairs.png">
                             <collision-poly>
                                 <point x="0" y="0" />
                                 <point x="1" y="0" />
@@ -199,6 +200,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="FloorTile" sid="588594729069912">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\zaina\Desktop\floortile.png" />
+            </object-type>
+            <object-type name="BlackTile" sid="437642625140098">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder name="Furniture">
             <object-type name="Bed" sid="822902554132576">
@@ -210,33 +219,12 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249722063667296" speed="5">
-                        <frame duration="1" hotspotX="1.00277" hotspotY="0.497462" original-source="C:\Users\zaina\Desktop\model_D0.png">
+                        <frame duration="1" hotspotX="1.00278" hotspotY="0.496622" original-source="C:\Users\zaina\Desktop\bed.png">
                             <collision-poly>
                                 <point x="0" y="0.121827" />
                                 <point x="1" y="0.121827" />
                                 <point x="1" y="0.544838" />
                                 <point x="0" y="0.544839" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="BedSideTable" sid="682779458495687">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="127465121082410">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365940991060863" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\BedSideTable.png">
-                            <collision-poly>
-                                <point x="0.00980392" y="0.00684932" />
-                                <point x="0.990196" y="0.00684932" />
-                                <point x="1" y="1" />
-                                <point x="0.5" y="0.89726" />
-                                <point x="0" y="1" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -269,6 +257,23 @@
                                 <point x="0.97561" y="0.993378" />
                                 <point x="0.487805" y="0.966887" />
                                 <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bedsidetable" sid="375127463112136">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616137837549463" speed="5">
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\bedside-table.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0166667" />
+                                <point x="0.971429" y="0.0166667" />
+                                <point x="0.971429" y="0.983333" />
+                                <point x="0.485714" y="0.95" />
+                                <point x="0.0285714" y="0.983333" />
+                                <point x="0" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>

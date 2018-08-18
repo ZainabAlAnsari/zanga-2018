@@ -265,11 +265,7 @@
                             </actions>
                         </event-block>
                         <event-block sid="131643679725825">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="483918609778083" type="Player">
-                                    <param id="0" name="Object">BedSideTable</param>
-                                </condition>
-                            </conditions>
+                            <conditions />
                             <actions>
                                 <action id="0" name="Play" sid="754519851103207" type="Audio">
                                     <param id="0" name="Audio file">ouch_new</param>
