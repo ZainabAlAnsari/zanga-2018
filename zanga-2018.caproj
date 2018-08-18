@@ -141,13 +141,10 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249722063667296" speed="5">
                         <frame duration="1" hotspotX="1.00277" hotspotY="0.497462" original-source="C:\Users\zaina\Desktop\model_D0.png">
                             <collision-poly>
-                                <point x="0.0943135" y="0.115059" />
-                                <point x="0.499307" y="0.115059" />
-                                <point x="0.998613" y="0.00169205" />
-                                <point x="0.998613" y="0.998308" />
-                                <point x="0.499307" y="0.978003" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0.499154" />
+                                <point x="0" y="0.121827" />
+                                <point x="1" y="0.121827" />
+                                <point x="1" y="0.974619" />
+                                <point x="0" y="0.974619" />
                             </collision-poly>
                         </frame>
                     </animation>
