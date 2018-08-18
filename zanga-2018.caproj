@@ -206,6 +206,11 @@
             </object-type>
             <object-type name="BedSideTable" sid="682779458495687">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="127465121082410">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365940991060863" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\BedSideTable.png">
@@ -244,25 +249,25 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingFront" pingpong="0" repeatcount="1" repeatto="0" sid="467364580598034" speed="0">
+                <animation framecount="4" loop="0" name="WalkingFront" pingpong="0" repeatcount="1" repeatto="0" sid="467364580598034" speed="4">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingBack" pingpong="0" repeatcount="1" repeatto="0" sid="666110407728255" speed="0">
+                <animation framecount="4" loop="0" name="WalkingBack" pingpong="0" repeatcount="1" repeatto="0" sid="666110407728255" speed="4">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="224446477775171" speed="0">
+                <animation framecount="4" loop="0" name="WalkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="224446477775171" speed="4">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="562369926815669" speed="0">
+                <animation framecount="4" loop="0" name="WalkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="562369926815669" speed="4">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
