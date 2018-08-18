@@ -19,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -223,14 +224,17 @@
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="8Direction" sid="921304284695347">
-                    <behavior id="EightDir" />
-                </behavior-type>
                 <behavior-type name="BoundToLayout" sid="413666972891312">
                     <behavior id="bound" />
                 </behavior-type>
                 <behavior-type name="Solid" sid="855570075526471">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="CustomMovement" sid="543203742920001">
+                    <behavior id="custom" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="108600057079570">
+                    <behavior id="EightDir" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
