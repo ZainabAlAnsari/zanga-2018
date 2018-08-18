@@ -17,6 +17,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -152,8 +153,8 @@
                             <collision-poly>
                                 <point x="0" y="0.121827" />
                                 <point x="1" y="0.121827" />
-                                <point x="1" y="0.974619" />
-                                <point x="0" y="0.974619" />
+                                <point x="1" y="0.544838" />
+                                <point x="0" y="0.544839" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -170,15 +171,35 @@
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194437366434750" speed="5">
                         <frame duration="1" hotspotX="-0.00390625" hotspotY="-0.00257069" original-source="C:\Users\zaina\Desktop\stairs.png">
                             <collision-poly>
-                                <point x="0.0078125" y="0.00514139" />
-                                <point x="0.585938" y="0.272494" />
-                                <point x="1" y="0.498715" />
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.771208" />
+                                <point x="0" y="0.771209" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="CollisionBox" sid="788849976771141">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="801058000122934">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="ShadowCaster" sid="319330106919903">
+                        <behavior id="shadowcaster" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640313682543414" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BottomWallsTilemap" sid="473297854232760">
+                <plugin id="Tilemap" />
+                <texture original-source="D:\Projects\Zanga-2018\Files\RoomTilemap.png" />
+                <tiles />
             </object-type>
         </object-folder>
         <object-type name="Player" sid="199508114855291">
