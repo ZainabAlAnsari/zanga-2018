@@ -14,7 +14,11 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -137,6 +141,11 @@
             </object-type>
             <object-type name="Bed" sid="822902554132576">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="335723641260531">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249722063667296" speed="5">
                         <frame duration="1" hotspotX="1.00277" hotspotY="0.497462" original-source="C:\Users\zaina\Desktop\model_D0.png">
@@ -155,6 +164,11 @@
             </object-type>
             <object-type name="Stairs" sid="879602927439900">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="530385000180795">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194437366434750" speed="5">
                         <frame duration="1" hotspotX="-0.00390625" hotspotY="-0.00257069" original-source="C:\Users\zaina\Desktop\stairs.png">
@@ -172,6 +186,17 @@
         </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="921304284695347">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="413666972891312">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="855570075526471">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="947420183454752" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
