@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evGame</name>
+    <events>
+        <event-block sid="947677381463834">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="904276383698341" type="Player" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
