@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evGame</name>
     <events>
+        <variable constant="0" name="Steps" sid="860025304696255" static="0" type="number">3</variable>
         <event-block sid="715785359608379">
             <conditions>
                 <condition id="2" name="Key is down" sid="377063225349256" type="Keyboard">
@@ -18,18 +19,129 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="740519426715270">
-            <conditions>
-                <condition behavior="8Direction" id="0" name="Is moving" sid="495174811688604" type="Player" />
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="186286690483439" type="Audio">
-                    <param id="0" name="Audio file">steps</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="930684092402241" title="Movement">
+            <sub-events>
+                <event-block sid="531418518716622">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="882016488573075" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="427781835464314" type="Player">
+                            <param id="0" name="Angle">-90</param>
+                            <param id="1" name="Distance">Steps</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="418944670332282" type="Player">
+                            <param id="0" name="Animation">&quot;WalkingBack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="451043610619684">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="717404439794754" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="615544215124162" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="165380339340467">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="803377899359662" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="217499685213562" type="Player">
+                            <param id="0" name="Angle">90</param>
+                            <param id="1" name="Distance">Steps</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="920823520452924" type="Player">
+                            <param id="0" name="Animation">&quot;WalkingFront&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="325355348660412">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="722025058897946" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="103293397817857" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="291382851078981">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="177515723729129" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="794186326795169" type="Player">
+                            <param id="0" name="Angle">0</param>
+                            <param id="1" name="Distance">Steps</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="749918663661718" type="Player">
+                            <param id="0" name="Animation">&quot;WalkingRight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="181765739113267">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="284707311793586" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="238931681596220" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="746872968235430">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="414187861780047" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="482405018416899" type="Player">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">Steps</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="576597045936932" type="Player">
+                            <param id="0" name="Animation">&quot;WalkingLeft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="701215130356015">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="918927849566022" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="788949921746630" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
