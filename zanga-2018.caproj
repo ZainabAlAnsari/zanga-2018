@@ -204,6 +204,22 @@
                 <texture original-source="D:\Projects\Zanga-2018\Files\RoomTilemap.png" />
                 <tiles />
             </object-type>
+            <object-type name="BedSideTable" sid="682779458495687">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365940991060863" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\BedSideTable.png">
+                            <collision-poly>
+                                <point x="0.00980392" y="0.00684932" />
+                                <point x="0.990196" y="0.00684932" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.89726" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
