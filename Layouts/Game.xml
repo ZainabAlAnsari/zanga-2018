@@ -148,13 +148,35 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>608</x>
-                        <y>208</y>
+                        <y>288</y>
                         <z>0</z>
                         <width>86.576385498</width>
                         <height>70.96622467</height>
                         <depth>0</depth>
                         <hotspotX>1.002773881</hotspotX>
                         <hotspotY>0.497461915</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Stairs" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>48</x>
+                        <y>160</y>
+                        <z>0</z>
+                        <width>82.090927124</width>
+                        <height>124.739730835</height>
+                        <depth>0</depth>
+                        <hotspotX>-0.00390625</hotspotX>
+                        <hotspotY>-0.002570694</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
