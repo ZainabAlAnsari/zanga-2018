@@ -255,12 +255,27 @@
                 </event-group>
                 <event-block sid="101959123325903">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="929222848064281" type="Player">
+                        <condition id="0" name="On collision with another object" sid="929222848064281" type="Player">
                             <param id="0" name="Object">Bed</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="535233626399946" type="Audio">
+                            <param id="0" name="Audio file">ouch_new</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="131643679725825">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="483918609778083" type="Player">
+                            <param id="0" name="Object">BedSideTable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="754519851103207" type="Audio">
                             <param id="0" name="Audio file">ouch_new</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
