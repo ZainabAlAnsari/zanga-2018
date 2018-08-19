@@ -472,6 +472,57 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Player Options">
+            <object-type name="OptionsPanel" sid="121115362496730">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="913323638391103" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\panel_beigeLight.png">
+                            <collision-poly>
+                                <point x="0.0294118" y="0.0294118" />
+                                <point x="0.5" y="0.00980392" />
+                                <point x="0.970588" y="0.0294118" />
+                                <point x="0.990196" y="0.5" />
+                                <point x="0.970588" y="0.970588" />
+                                <point x="0.5" y="0.990196" />
+                                <point x="0.0294118" y="0.970588" />
+                                <point x="0.00980392" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="BoxContentText" sid="605159679218013">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="ThrowAwayButton" sid="196704944207744">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="105566763996027" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\buttonLong_brown.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\Game Assets\Kenney UI\Keynney - UI Pack RPG\PNG\buttonLong_brown_pressed.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="KeepItButton" sid="859799743564115">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="276586649421372" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\Projects\Zanga-2018\Files\UI\button-up.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.511111" original-source="D:\Projects\Zanga-2018\Files\UI\button-pressed.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ThrowAwayText" sid="635330342625462">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="KeepItText" sid="560587274909963">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="BoxText" sid="294428043176099">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
             <instance-variables>
@@ -585,7 +636,7 @@
         <event-sheet>evSplash.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Audio" uid="31">
+        <global-instance type="Audio" uid="32">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -599,7 +650,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="32" />
+        <global-instance type="Keyboard" uid="56" />
     </global-instances>
     <sounds-folder>
         <file name="Explosion 3.m4a" />
