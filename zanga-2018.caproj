@@ -373,6 +373,85 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ClosedBox" sid="285958149251703">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887506579340848" speed="0">
+                        <frame duration="1" hotspotX="0.502591" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D0.png">
+                            <collision-poly>
+                                <point x="0.0103627" y="0.360215" />
+                                <point x="0.507772" y="0.016129" />
+                                <point x="0.792746" y="0.215054" />
+                                <point x="0.989637" y="0.370968" />
+                                <point x="0.989637" y="0.645161" />
+                                <point x="0.497409" y="1" />
+                                <point x="0.207254" y="0.784946" />
+                                <point x="0" y="0.623656" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D1.png">
+                            <collision-poly>
+                                <point x="0" y="0.221591" />
+                                <point x="0.707865" y="0" />
+                                <point x="0.808989" y="0.193182" />
+                                <point x="0.994382" y="0.5" />
+                                <point x="1" y="0.784091" />
+                                <point x="0.303371" y="1" />
+                                <point x="0.179775" y="0.818182" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503597" hotspotY="0.503106" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D2.png">
+                            <collision-poly>
+                                <point x="0" y="0.0869565" />
+                                <point x="0.510791" y="0.0807453" />
+                                <point x="0.985611" y="0.0869565" />
+                                <point x="0.985611" y="0.496894" />
+                                <point x="0.992806" y="0.993789" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.496894" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D3.png">
+                            <collision-poly>
+                                <point x="0.176136" y="0.178161" />
+                                <point x="0.284091" y="0" />
+                                <point x="0.977273" y="0.195402" />
+                                <point x="0.988636" y="0.5" />
+                                <point x="0.727273" y="1" />
+                                <point x="0.5" y="0.942529" />
+                                <point x="0" y="0.810345" />
+                                <point x="0.00568182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502762" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D5.png">
+                            <collision-poly>
+                                <point x="0.0110497" y="0.235955" />
+                                <point x="0.679558" y="0" />
+                                <point x="0.80663" y="0.179775" />
+                                <point x="0.994475" y="0.5" />
+                                <point x="1" y="0.780899" />
+                                <point x="0.320442" y="1" />
+                                <point x="0.187845" y="0.808989" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502994" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D15.png">
+                            <collision-poly>
+                                <point x="0.209581" y="0" />
+                                <point x="0.497006" y="0.0595238" />
+                                <point x="0.988024" y="0.142857" />
+                                <point x="0.976048" y="0.5" />
+                                <point x="0.784431" y="1" />
+                                <point x="0.497006" y="0.946429" />
+                                <point x="0" y="0.845238" />
+                                <point x="0" y="0.559524" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.502732" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D9.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
@@ -452,6 +531,7 @@
         </family>
         <family name="Items" plugin-id="Sprite" sid="674784858656563">
             <members>
+                <member>ClosedBox</member>
                 <member>OpenBox</member>
             </members>
             <instance-variables>
