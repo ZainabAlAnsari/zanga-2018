@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>evGame</name>
     <events>
-        <variable constant="0" name="MinStress" sid="557502773012511" static="0" type="number">20</variable>
         <variable constant="0" name="StartStress" sid="363825760955001" static="0" type="number">50</variable>
         <variable constant="0" name="MaxStress" sid="237071619188003" static="0" type="number">83</variable>
         <variable constant="0" name="GameOver" sid="932856846295941" static="0" type="text">No</variable>
@@ -23,7 +22,7 @@
                             <param id="0" name="Instance variable">Stress</param>
                             <param id="1" name="Value">StartStress</param>
                         </action>
-                        <action id="-5" name="Set width" sid="885094849432908" type="StressBar">
+                        <action id="-5" name="Set width" sid="885094849432908" type="StressBaroriginal">
                             <param id="0" name="Width">StartStress</param>
                         </action>
                         <action id="-15" name="Set visible" sid="839502159458124" type="GameOverText">
@@ -52,9 +51,6 @@
                             <param id="0" name="Pin to">Player</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="116269792302537" type="GameWinText">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -68,7 +64,7 @@
                                 <condition id="-6" name="Every X seconds" sid="399616619613015" type="System">
                                     <param id="0" name="Interval (seconds)">1</param>
                                 </condition>
-                                <condition id="-14" name="Compare variable" sid="310747129154461" type="System">
+                                <condition id="-14" name="Compare variable" sid="144367067813303" type="System">
                                     <param id="0" name="Variable">GameOver</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">&quot;Yes&quot;</param>
@@ -79,16 +75,10 @@
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-5" name="Set width" sid="121552743343897" type="StressBar">
+                                <action id="-5" name="Set width" sid="121552743343897" type="StressBaroriginal">
                                     <param id="0" name="Width">Player.Stress</param>
                                 </action>
                             </actions>
-                        </event-block>
-                        <event-block sid="878239921786745">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="948934676441956" type="System" />
-                            </conditions>
-                            <actions />
                             <sub-events>
                                 <event-block sid="403543356502911">
                                     <conditions>
@@ -96,11 +86,6 @@
                                             <param id="0" name="Instance variable">Stress</param>
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Value">MaxStress</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="144367067813303" type="System">
-                                            <param id="0" name="Variable">GameOver</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Value">&quot;Yes&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
@@ -118,7 +103,7 @@
                                             <param id="0" name="Variable">GameOver</param>
                                             <param id="1" name="Value">&quot;Yes&quot;</param>
                                         </action>
-                                        <action id="-5" name="Set width" sid="913051621042238" type="StressBar">
+                                        <action id="-5" name="Set width" sid="913051621042238" type="StressBaroriginal">
                                             <param id="0" name="Width">MaxStress</param>
                                         </action>
                                         <action id="0" name="Set text" sid="498772387141704" type="GameOverText">
@@ -135,45 +120,6 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="448169142017333">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="582992477605398" type="Player">
-                                            <param id="0" name="Instance variable">Stress</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">MinStress</param>
-                                        </condition>
-                                        <condition id="-14" name="Compare variable" sid="664969044722548" type="System">
-                                            <param id="0" name="Variable">GameOver</param>
-                                            <param id="1" name="Comparison">1</param>
-                                            <param id="2" name="Value">&quot;Yes&quot;</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Play" sid="488085534287587" type="Audio">
-                                            <param id="0" name="Audio file">win</param>
-                                            <param id="2" name="Loop">0</param>
-                                            <param id="3" name="Volume">0</param>
-                                            <param id="1" name="Tag (optional)">&quot;WinSound&quot;</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="858702065413718" type="Player" />
-                                        <action id="0" name="Set text" sid="341050116727392" type="GameWinText">
-                                            <param id="0" name="Text">&quot;Win!!!&quot; &amp; newline &amp; &quot;Press &quot;&quot;Space&quot;&quot; to go back to Splash screen&quot;</param>
-                                        </action>
-                                        <action id="-15" name="Set visible" sid="715201225783878" type="GameWinText">
-                                            <param id="0" name="Visibility">1</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="808024465366580" type="System">
-                                            <param id="0" name="Variable">GameOver</param>
-                                            <param id="1" name="Value">&quot;Yes&quot;</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="740255638148871" type="StressBar">
-                                            <param id="0" name="Width">MinStress</param>
-                                        </action>
-                                        <action id="6" name="Stop" sid="600100712073477" type="Audio">
-                                            <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="242784997905087">
@@ -181,50 +127,34 @@
                                 <condition id="0" name="On key pressed" sid="839690959947425" type="Keyboard">
                                     <param id="0" name="Key">32</param>
                                 </condition>
+                                <condition id="1" name="Is overlapping another object" sid="957966637379214" type="HandleAurora">
+                                    <param id="0" name="Object">ClosedBox</param>
+                                </condition>
                             </conditions>
                             <actions>
+                                <action id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
                                 <action id="-12" name="Subtract from" sid="218435987784376" type="Player">
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <comment>Interacting with Items</comment>
-                                <event-block sid="476172153467459">
-                                    <conditions>
-                                        <condition id="1" name="Is overlapping another object" sid="264322672523197" type="HandleAurora">
-                                            <param id="0" name="Object">OpenBox</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="512460145326798" type="OpenBox" />
-                                        <action id="-12" name="Subtract from" sid="920611793815740" type="Player">
-                                            <param id="0" name="Instance variable">Stress</param>
-                                            <param id="1" name="Value">5</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="476159502498672" type="StressBar">
-                                            <param id="0" name="Width">Player.Stress</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block any="1" sid="211547910153803">
-                                    <conditions>
-                                        <condition id="1" name="Is overlapping another object" sid="544866563227773" type="HandleAurora">
-                                            <param id="0" name="Object">ClosedBox</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
-                                        <action id="-12" name="Subtract from" sid="454083090282302" type="Player">
-                                            <param id="0" name="Instance variable">Stress</param>
-                                            <param id="1" name="Value">5</param>
-                                        </action>
-                                        <action id="-5" name="Set width" sid="411811865948892" type="StressBar">
-                                            <param id="0" name="Width">Player.Stress</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
+                        </event-block>
+                        <event-block sid="310033829139654">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="578902785416788" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="616790974632663" type="HandleAurora">
+                                    <param id="0" name="Object">OpenBox</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="512460145326798" type="OpenBox" />
+                                <action id="-12" name="Subtract from" sid="920611793815740" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -483,7 +413,7 @@
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
-                                <action id="-5" name="Set width" sid="707564358494965" type="StressBar">
+                                <action id="-5" name="Set width" sid="707564358494965" type="StressBaroriginal">
                                     <param id="0" name="Width">Player.Stress</param>
                                 </action>
                             </actions>

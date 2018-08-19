@@ -77,7 +77,7 @@
             <object-type name="MoneyAmountText" sid="670103249132744">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="StressBar" sid="997848442255702">
+            <object-type name="StressBaroriginal" sid="997848442255702">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="307079130092928" speed="5">
@@ -105,8 +105,9 @@
             <object-type name="GameOverText" sid="783655707748783">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="GameWinText" sid="813503097213738">
-                <plugin id="Text" />
+            <object-type name="StressBar" sid="697347298419985">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\zaina\Desktop\stressbar-pill.png" />
             </object-type>
         </object-folder>
         <object-folder name="Room Walls &amp; Flooring">
@@ -606,8 +607,6 @@
         <file name="Gameover.ogg" />
         <file name="MattOglseby - 1.m4a" />
         <file name="MattOglseby - 1.ogg" />
-        <file name="win.m4a" />
-        <file name="win.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
