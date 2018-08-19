@@ -1752,11 +1752,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>76</x>
-                        <y>76</y>
+                        <x>81</x>
+                        <y>98</y>
                         <z>0</z>
                         <width>102</width>
-                        <height>102</height>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1779,64 +1779,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>36</x>
-                        <y>76</y>
+                        <x>42</x>
+                        <y>77</y>
                         <z>0</z>
                         <width>56</width>
-                        <height>27</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="UIText" uid="13">
-                    <properties>
-                        <text>Money</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>236,227,206</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>36</x>
-                        <y>40</y>
-                        <z>0</z>
-                        <width>56</width>
-                        <height>27</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="MoneyAmountText" uid="11">
-                    <properties>
-                        <text>BHD 9999</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>136,224,96</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>36</x>
-                        <y>58</y>
-                        <z>0</z>
-                        <width>80</width>
                         <height>27</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -1907,8 +1853,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>37</x>
-                        <y>96</y>
+                        <x>42</x>
+                        <y>102</y>
                         <z>0</z>
                         <width>80</width>
                         <height>16</height>
