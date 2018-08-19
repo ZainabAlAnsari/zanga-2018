@@ -1680,7 +1680,7 @@
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-29,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>0,204,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
