@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -597,6 +598,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Mouse" sid="116864210656572">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Furniture" plugin-id="Sprite" sid="630299438734579">
@@ -658,6 +662,7 @@
             </properties>
         </global-instance>
         <global-instance type="Keyboard" uid="56" />
+        <global-instance type="Mouse" uid="64" />
     </global-instances>
     <sounds-folder>
         <file name="Explosion 3.m4a" />

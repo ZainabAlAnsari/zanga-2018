@@ -6,6 +6,7 @@
         <variable constant="0" name="StartStress" sid="363825760955001" static="0" type="number">50</variable>
         <variable constant="0" name="MinStress" sid="866576949527899" static="0" type="number">15</variable>
         <variable constant="0" name="MaxStress" sid="237071619188003" static="0" type="number">80</variable>
+        <variable constant="0" name="tmpBoxID" sid="837795798354753" static="0" type="text"></variable>
         <variable constant="0" name="GameOver" sid="932856846295941" static="0" type="text">No</variable>
         <variable constant="0" name="StartMoney" sid="144251360583792" static="0" type="number">0</variable>
         <variable constant="0" name="Steps" sid="860025304696255" static="0" type="number">3</variable>
@@ -54,6 +55,14 @@
                         </action>
                         <action id="-15" name="Set visible" sid="606193134402494" type="GameWinText">
                             <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="237058623206919" type="System">
+                            <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="245169586237696" type="System">
+                            <param id="0" name="Variable">tmpBoxID</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -242,12 +251,52 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
-                                <action id="-12" name="Subtract from" sid="218435987784376" type="Player">
+                                <action disabled="1" id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
+                                <action disabled="1" id="-12" name="Subtract from" sid="218435987784376" type="Player">
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
+                                <action id="-4" name="Set layer visible" sid="864937981383078" type="System">
+                                    <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="787958078361723" type="System">
+                                    <param id="0" name="Variable">tmpBoxID</param>
+                                    <param id="1" name="Value">ClosedBox.IID</param>
+                                </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="520757616247187">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="322944595637726" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">ThrowAwayButton</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="575211119976231" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="695830107395927" type="System">
+                                    <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="411298011963241">
+                                    <conditions>
+                                        <condition id="-13" name="Pick nth instance" sid="729518494413048" type="System">
+                                            <param id="0" name="Object">ClosedBox</param>
+                                            <param id="1" name="Instance">tmpBoxID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="100306619456319" type="ClosedBox" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                         <event-block sid="310033829139654">
                             <conditions>
