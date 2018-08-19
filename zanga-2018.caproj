@@ -19,6 +19,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
@@ -507,6 +508,19 @@
         </object-type>
         <object-type name="Keyboard" sid="589593691325715">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="HandleAurora" sid="875064241300695">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="433555444339053">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588899705748678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

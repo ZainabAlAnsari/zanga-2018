@@ -41,75 +41,123 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;MattOglesby&quot;</param>
                         </action>
+                        <action id="5" name="Set frame" sid="131835853883808" type="OpenBox">
+                            <param id="0" name="Frame number">random(7)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="315277213859393" type="ClosedBox">
+                            <param id="0" name="Frame number">random(7)</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="604992448354000" type="HandleAurora">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="710210157211531" title="GamePlay">
             <sub-events>
-                <event-block sid="901085167284155">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="399616619613015" type="System">
-                            <param id="0" name="Interval (seconds)">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="144367067813303" type="System">
-                            <param id="0" name="Variable">GameOver</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">&quot;Yes&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Add to" sid="452022187866063" type="Player">
-                            <param id="0" name="Instance variable">Stress</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-5" name="Set width" sid="121552743343897" type="StressBar">
-                            <param id="0" name="Width">Player.Stress</param>
-                        </action>
-                    </actions>
+                <event-group description="" sid="916169346329513" title="Play">
                     <sub-events>
-                        <event-block sid="403543356502911">
+                        <event-block sid="901085167284155">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="309308495041902" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">MaxStress</param>
+                                <condition id="-6" name="Every X seconds" sid="399616619613015" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="144367067813303" type="System">
+                                    <param id="0" name="Variable">GameOver</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">&quot;Yes&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Play" sid="243043491376691" type="Audio">
-                                    <param id="0" name="Audio file">death</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                <action id="-11" name="Add to" sid="452022187866063" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="768612972741196" type="Player" />
-                                <action id="-15" name="Set visible" sid="235547624131717" type="GameOverText">
-                                    <param id="0" name="Visibility">1</param>
+                                <action id="-5" name="Set width" sid="121552743343897" type="StressBar">
+                                    <param id="0" name="Width">Player.Stress</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="986389729052385" type="System">
-                                    <param id="0" name="Variable">GameOver</param>
-                                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="403543356502911">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="309308495041902" type="Player">
+                                            <param id="0" name="Instance variable">Stress</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">MaxStress</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="243043491376691" type="Audio">
+                                            <param id="0" name="Audio file">death</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="768612972741196" type="Player" />
+                                        <action id="-15" name="Set visible" sid="235547624131717" type="GameOverText">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="986389729052385" type="System">
+                                            <param id="0" name="Variable">GameOver</param>
+                                            <param id="1" name="Value">&quot;Yes&quot;</param>
+                                        </action>
+                                        <action id="-5" name="Set width" sid="913051621042238" type="StressBar">
+                                            <param id="0" name="Width">MaxStress</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="498772387141704" type="GameOverText">
+                                            <param id="0" name="Text">&quot;Game Over!  Press &quot;&quot;Space&quot;&quot; to go back to Splash screen&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="648037785926950" type="Audio">
+                                            <param id="0" name="Audio file">Gameover</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;GameOverMusic&quot;</param>
+                                        </action>
+                                        <action id="6" name="Stop" sid="116941040655538" type="Audio">
+                                            <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="242784997905087">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="839690959947425" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="957966637379214" type="HandleAurora">
+                                    <param id="0" name="Object">ClosedBox</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
+                                <action id="-12" name="Subtract from" sid="218435987784376" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
-                                <action id="-5" name="Set width" sid="913051621042238" type="StressBar">
-                                    <param id="0" name="Width">MaxStress</param>
-                                </action>
-                                <action id="0" name="Set text" sid="498772387141704" type="GameOverText">
-                                    <param id="0" name="Text">&quot;Game Over!  Press &quot;&quot;Space&quot;&quot; to go back to Splash screen&quot;</param>
-                                </action>
-                                <action id="0" name="Play" sid="648037785926950" type="Audio">
-                                    <param id="0" name="Audio file">Gameover</param>
-                                    <param id="2" name="Loop">1</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;GameOverMusic&quot;</param>
-                                </action>
-                                <action id="6" name="Stop" sid="116941040655538" type="Audio">
-                                    <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
+                            </actions>
+                        </event-block>
+                        <event-block sid="310033829139654">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="578902785416788" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="616790974632663" type="HandleAurora">
+                                    <param id="0" name="Object">OpenBox</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="512460145326798" type="OpenBox" />
+                                <action id="-12" name="Subtract from" sid="920611793815740" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
-                </event-block>
+                </event-group>
                 <event-group description="" sid="930684092402241" title="Movement">
                     <sub-events>
                         <event-group description="" sid="982351489059816" title="ASWD">
@@ -346,6 +394,12 @@
                                 </condition>
                                 <condition id="0" name="On collision with another object" sid="551241919760371" type="Player">
                                     <param id="0" name="Object">LargeTable</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="860399843652274" type="Player">
+                                    <param id="0" name="Object">ClosedBox</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="949496073220086" type="Player">
+                                    <param id="0" name="Object">OpenBox</param>
                                 </condition>
                             </conditions>
                             <actions>
