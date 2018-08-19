@@ -15,15 +15,6 @@
                         <condition id="-2" name="On start of layout" sid="422087439730544" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="903061359665060" type="StressBar_Left">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="623782628153327" type="StressBar_Mid">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="910241412035477" type="StressBar_Right">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
                         <action id="0" name="Set text" sid="476377574672486" type="MoneyAmountText">
                             <param id="0" name="Text">&quot;BHD &quot; &amp; StartMoney</param>
                         </action>
@@ -31,7 +22,7 @@
                             <param id="0" name="Instance variable">Stress</param>
                             <param id="1" name="Value">StartStress</param>
                         </action>
-                        <action id="-5" name="Set width" sid="885094849432908" type="test_stress_bar">
+                        <action id="-5" name="Set width" sid="885094849432908" type="StressBar">
                             <param id="0" name="Width">StartStress</param>
                         </action>
                         <action id="-15" name="Set visible" sid="839502159458124" type="GameOverText">
@@ -66,7 +57,7 @@
                             <param id="0" name="Instance variable">Stress</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-5" name="Set width" sid="121552743343897" type="test_stress_bar">
+                        <action id="-5" name="Set width" sid="121552743343897" type="StressBar">
                             <param id="0" name="Width">Player.Stress</param>
                         </action>
                     </actions>
@@ -94,7 +85,7 @@
                                     <param id="0" name="Variable">GameOver</param>
                                     <param id="1" name="Value">&quot;Yes&quot;</param>
                                 </action>
-                                <action id="-5" name="Set width" sid="913051621042238" type="test_stress_bar">
+                                <action id="-5" name="Set width" sid="913051621042238" type="StressBar">
                                     <param id="0" name="Width">MaxStress</param>
                                 </action>
                                 <action id="0" name="Set text" sid="498772387141704" type="GameOverText">

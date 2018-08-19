@@ -8,23 +8,20 @@
                 <condition id="-2" name="On start of layout" sid="966988142515072" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="294109261155493" type="TextSplash">
-                    <param id="0" name="Text">&quot;Stress Minimalizer&quot; &amp; newline</param>
-                </action>
                 <action id="1" name="Append text" sid="423258611727806" type="TextSplash">
-                    <param id="0" name="Text">&quot;Welcome to the game&quot; &amp; newline</param>
+                    <param id="0" name="Text">&quot;Welcome to the&quot; &amp; newline &amp; &quot;STRESS MINIMALIZER&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="973632100193736" type="TextSplash">
-                    <param id="0" name="Text">&quot;Aim: reduce the stress to win, otherwise it increases until game over&quot; &amp; newline</param>
+                    <param id="0" name="Text">&quot;Reduce your stress, or suffer a heart attack if you don&apos;t!&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="379481740832330" type="TextSplash">
-                    <param id="0" name="Text">&quot;Conrols&quot; &amp; newline &amp; &quot;Arrow keys, ASDW keys&quot; &amp; newline</param>
+                    <param id="0" name="Text">&quot;Controls: ARROW &amp; WASD keys to move&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="761494830228148" type="TextSplash">
                     <param id="0" name="Text">&quot;P to pause&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="468833186850203" type="TextSplash">
-                    <param id="0" name="Text">newline &amp; &quot;Space to start&quot;</param>
+                    <param id="0" name="Text">newline &amp; &quot;Press SPACE to Play&quot;</param>
                 </action>
             </actions>
         </event-block>
