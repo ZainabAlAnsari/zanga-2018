@@ -973,7 +973,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>Random Amazon impulse purchase </Content>
+                        <Content>&lt;insert random Amazon impulse purchase here&gt;</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1129,7 +1129,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>Music records from the 70&apos;s that you haven&apos;t listened to in 20 years because the player broke</Content>
+                        <Content>Music records from the 70&apos;s that you haven&apos;t listened to in 20 years</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">

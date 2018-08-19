@@ -9,7 +9,7 @@
             </conditions>
             <actions>
                 <action id="1" name="Append text" sid="423258611727806" type="TextSplash">
-                    <param id="0" name="Text">&quot;Welcome to the&quot; &amp; newline &amp; &quot;STRESS MINIMALIZER&quot; &amp; newline</param>
+                    <param id="0" name="Text">&quot;Welcome to the&quot; &amp; newline &amp; &quot;MINIMALIST LIFESTYLER&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="973632100193736" type="TextSplash">
                     <param id="0" name="Text">&quot;Reduce your stress, or suffer a heart attack if you don&apos;t!&quot; &amp; newline</param>
@@ -18,13 +18,13 @@
                     <param id="0" name="Text">&quot;Controls: ARROW &amp; WASD keys to move&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="702280836251242" type="TextSplash">
-                    <param id="0" name="Text">&quot;Esc to quit and go back to Splash screen&quot; &amp; newline</param>
+                    <param id="0" name="Text">&quot;Esc to quit and go back to start screen&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="761494830228148" type="TextSplash">
                     <param id="0" name="Text">&quot;P to pause&quot; &amp; newline</param>
                 </action>
                 <action id="1" name="Append text" sid="468833186850203" type="TextSplash">
-                    <param id="0" name="Text">newline &amp; &quot;Press SPACE to Play&quot;</param>
+                    <param id="0" name="Text">newline &amp; &quot;Press SPACE to Play and explore objects&quot;</param>
                 </action>
             </actions>
         </event-block>
