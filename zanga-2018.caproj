@@ -94,6 +94,9 @@
             <object-type name="GameOverText" sid="783655707748783">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="GameWinText" sid="813503097213738">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="Room Walls &amp; Flooring">
             <object-type name="IndoorRoomTilemap" sid="591487264121954">
@@ -592,6 +595,8 @@
         <file name="Gameover.ogg" />
         <file name="MattOglseby - 1.m4a" />
         <file name="MattOglseby - 1.ogg" />
+        <file name="win.m4a" />
+        <file name="win.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
