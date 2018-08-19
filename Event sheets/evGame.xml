@@ -318,10 +318,28 @@
                 </event-group>
                 <event-group description="" sid="445468044243016" title="Collisions">
                     <sub-events>
-                        <event-block sid="101959123325903">
+                        <event-block any="1" sid="101959123325903">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="929222848064281" type="Player">
                                     <param id="0" name="Object">Bed</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="823580013785183" type="Player">
+                                    <param id="0" name="Object">LargeTable</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="857603216074795" type="Player">
+                                    <param id="0" name="Object">bedsidetable</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="186325777548636" type="Player">
+                                    <param id="0" name="Object">bookshelves</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="472845490191473" type="Player">
+                                    <param id="0" name="Object">bookshelvesside</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="821454462191663" type="Player">
+                                    <param id="0" name="Object">plant</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="551241919760371" type="Player">
+                                    <param id="0" name="Object">LargeTable</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -335,100 +353,8 @@
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="743403807119183">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="857603216074795" type="Player">
-                                    <param id="0" name="Object">bedsidetable</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="859970411734005" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="782768784992196" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="267919567477890">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="186325777548636" type="Player">
-                                    <param id="0" name="Object">bookshelves</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="911417042696253" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="791365730420000" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="320449032418645">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="472845490191473" type="Player">
-                                    <param id="0" name="Object">bookshelvesside</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="585139937014492" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="516059932187909" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="604652228921550">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="821454462191663" type="Player">
-                                    <param id="0" name="Object">plant</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="330744121784150" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="819701498757072" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="743542084492169">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="551241919760371" type="Player">
-                                    <param id="0" name="Object">LargeTable</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="760523303534315" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-11" name="Add to" sid="605292153122296" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
+                                <action id="-5" name="Set width" sid="707564358494965" type="test_stress_bar">
+                                    <param id="0" name="Width">Player.Stress</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -537,13 +463,21 @@
                                     <param id="2" name="Value">&quot;Yes&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="785755491362467" type="System">
-                                    <param id="0" name="Layout">Splash</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="576998581426539">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="790667301286164" type="Keyboard">
+                            <param id="0" name="Key">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="785755491362467" type="System">
+                            <param id="0" name="Layout">Splash</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
