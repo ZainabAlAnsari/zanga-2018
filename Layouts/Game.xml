@@ -1396,9 +1396,9 @@
                         </behavior-instance>
                         <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>250</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>2000</deceleration>
+                                <max-speed>100</max-speed>
+                                <acceleration>500</acceleration>
+                                <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
                                 <set-angle>No</set-angle>
                                 <default-controls>Yes</default-controls>
