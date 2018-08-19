@@ -832,6 +832,7 @@
                     </properties>
                     <instance-variables>
                         <Stress>0</Stress>
+                        <Money>0</Money>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">

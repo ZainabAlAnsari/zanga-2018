@@ -292,6 +292,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Stress" sid="969568990488776" type="number" />
+                <instance-variable name="Money" sid="670532201176054" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="413666972891312">

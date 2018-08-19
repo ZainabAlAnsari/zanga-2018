@@ -20,6 +20,9 @@
                         <action id="-15" name="Set visible" sid="910241412035477" type="StressBar_Right">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="0" name="Set text" sid="476377574672486" type="MoneyAmountText">
+                            <param id="0" name="Text">&quot;BHD &quot; &amp; Player.Money</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -249,32 +252,100 @@
                                 </event-block>
                             </sub-events>
                         </event-group>
-                        <event-block sid="101959123325903">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="929222848064281" type="Player">
-                                    <param id="0" name="Object">Bed</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="535233626399946" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="131643679725825">
-                            <conditions />
-                            <actions>
-                                <action id="0" name="Play" sid="754519851103207" type="Audio">
-                                    <param id="0" name="Audio file">ouch_new</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        <event-group description="" sid="445468044243016" title="Collisions">
+                            <sub-events>
+                                <event-block sid="101959123325903">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="929222848064281" type="Player">
+                                            <param id="0" name="Object">Bed</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="535233626399946" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="743403807119183">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="857603216074795" type="Player">
+                                            <param id="0" name="Object">bedsidetable</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="859970411734005" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="267919567477890">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="186325777548636" type="Player">
+                                            <param id="0" name="Object">bookshelves</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="911417042696253" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="320449032418645">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="472845490191473" type="Player">
+                                            <param id="0" name="Object">bookshelvesside</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="585139937014492" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="604652228921550">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="821454462191663" type="Player">
+                                            <param id="0" name="Object">plant</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="330744121784150" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="743542084492169">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="551241919760371" type="Player">
+                                            <param id="0" name="Object">LargeTable</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="760523303534315" type="Audio">
+                                            <param id="0" name="Audio file">ouch_new</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
                     </sub-events>
                 </event-group>
             </sub-events>
@@ -290,6 +361,21 @@
                     <actions>
                         <action id="0" name="Play" sid="831706169461344" type="Audio">
                             <param id="0" name="Audio file">ouch_new</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="954950865431418">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="820997923065274" type="Keyboard">
+                            <param id="0" name="Key">67</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="708416917974840" type="Audio">
+                            <param id="0" name="Audio file">steps</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
