@@ -44,6 +44,12 @@
                             <param id="0" name="Variable">GameOver</param>
                             <param id="1" name="Value">&quot;No&quot;</param>
                         </action>
+                        <action id="0" name="Play" sid="871852635540220" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;MattOglesby&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -98,7 +104,16 @@
                                     <param id="0" name="Width">MaxStress</param>
                                 </action>
                                 <action id="0" name="Set text" sid="498772387141704" type="GameOverText">
-                                    <param id="0" name="Text">&quot;Game Over!  Press any key to go back to Splash screen&quot;</param>
+                                    <param id="0" name="Text">&quot;Game Over!  Press &quot;&quot;Space&quot;&quot; to go back to Splash screen&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="648037785926950" type="Audio">
+                                    <param id="0" name="Audio file">Gameover</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;GameOverMusic&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="116941040655538" type="Audio">
+                                    <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -451,7 +466,9 @@
                 </event-block>
                 <event-block sid="826693244811213">
                     <conditions>
-                        <condition id="1" name="On any key pressed" sid="858043723963327" type="Keyboard" />
+                        <condition id="0" name="On key pressed" sid="858043723963327" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
                     </conditions>
                     <actions />
                     <sub-events>
@@ -463,7 +480,12 @@
                                     <param id="2" name="Value">&quot;Yes&quot;</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="912175758624874" type="System">
+                                    <param id="0" name="Layout">Splash</param>
+                                </action>
+                                <action id="33" name="Stop all" sid="120825792059091" type="Audio" />
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-block>

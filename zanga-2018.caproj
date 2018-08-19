@@ -432,6 +432,10 @@
         <file name="steps.ogg" />
         <file name="death.m4a" />
         <file name="death.ogg" />
+        <file name="Gameover.m4a" />
+        <file name="Gameover.ogg" />
+        <file name="MattOglseby - 1.m4a" />
+        <file name="MattOglseby - 1.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
