@@ -597,9 +597,6 @@
                     <sub-events>
                         <event-block any="1" sid="101959123325903">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="981014908145060" type="Player">
-                                    <param id="0" name="Object">Furniture</param>
-                                </condition>
                                 <condition id="0" name="On collision with another object" sid="302114397239706" type="Player">
                                     <param id="0" name="Object">Items</param>
                                 </condition>

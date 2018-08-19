@@ -289,6 +289,71 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Oven" sid="402460412342210">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323952092028168" speed="5">
+                        <frame duration="1" hotspotX="-0.0070922" hotspotY="0.497462" original-source="C:\Users\zaina\Desktop\Oven\Oven_D2.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.451776" />
+                                <point x="0" y="0.456851" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fridge" sid="312882072496589">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235934780834600" speed="5">
+                        <frame duration="1" hotspotX="0.503597" hotspotY="0.502591" original-source="C:\Users\zaina\Desktop\fridge\Fridge_D2.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.34715" />
+                                <point x="0" y="0.341969" />
+                                <point x="0" y="0.497409" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="KitchenCabinet_Bottom_D" sid="919208849010279">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247686454440574" speed="5">
+                        <frame duration="1" hotspotX="-0.0141844" hotspotY="0.48731" original-source="C:\Users\zaina\Desktop\cabinet2\KitchenCabinet_Bottom_D2.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.284264" />
+                                <point x="0" y="0.284264" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TrashCan_D" sid="254177522700412">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562155619742628" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Trash Can\TrashCan_D15.png">
+                            <collision-poly>
+                                <point x="0.0875" y="0.397059" />
+                                <point x="0.4625" y="0.367647" />
+                                <point x="0.8375" y="0.404412" />
+                                <point x="0.9125" y="0.639706" />
+                                <point x="0.7875" y="0.875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.911765" />
+                                <point x="0.075" y="0.647059" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Items">
             <object-type name="laptop" sid="412141416405684">
@@ -609,8 +674,12 @@
                 <member>bedsidetable</member>
                 <member>bookshelves</member>
                 <member>bookshelvesside</member>
+                <member>Fridge</member>
+                <member>KitchenCabinet_Bottom_D</member>
                 <member>LargeTable</member>
+                <member>Oven</member>
                 <member>plant</member>
+                <member>TrashCan_D</member>
             </members>
             <behaviors>
                 <behavior-type name="Solid" sid="424905440481669">
