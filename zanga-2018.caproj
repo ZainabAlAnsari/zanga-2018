@@ -362,6 +362,20 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="test_stress_bar" sid="997848442255702">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="307079130092928" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\aw634\OneDrive\-Me-\Games\Jam_2018\test_proj1\test_stress_bar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameOverText" sid="783655707748783">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextPause" sid="615927692043197">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Furniture" plugin-id="Sprite" sid="630299438734579">
@@ -410,6 +424,8 @@
         <file name="ouch_new.m4a" />
         <file name="ouch_new.ogg" />
         <file name="steps.ogg" />
+        <file name="death.m4a" />
+        <file name="death.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
