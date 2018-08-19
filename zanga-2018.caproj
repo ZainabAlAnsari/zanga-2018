@@ -185,6 +185,10 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
+            <object-type name="FloorTile_Kitchen" sid="729497117829512">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\zaina\Desktop\kitchentile.png" />
+            </object-type>
         </object-folder>
         <object-folder name="Furniture">
             <object-type name="Bed" sid="822902554132576">
