@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>evGame</name>
+    <name>GameEvents</name>
     <events>
         <variable constant="0" name="StartStress" sid="363825760955001" static="0" type="number">50</variable>
         <variable constant="0" name="MinStress" sid="866576949527899" static="0" type="number">15</variable>
@@ -686,7 +686,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Go to layout" sid="912175758624874" type="System">
-                                    <param id="0" name="Layout">Splash</param>
+                                    <param id="0" name="Layout">Start</param>
                                 </action>
                                 <action id="33" name="Stop all" sid="120825792059091" type="Audio" />
                             </actions>
@@ -701,7 +701,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="785755491362467" type="System">
-                            <param id="0" name="Layout">Splash</param>
+                            <param id="0" name="Layout">Start</param>
                         </action>
                         <action id="6" name="Stop" sid="355333689267258" type="Audio">
                             <param id="0" name="Tag">&quot;MattOglesby&quot;</param>

@@ -38,7 +38,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Splash</first-layout>
+    <first-layout>Start</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -639,12 +639,12 @@
         </family>
     </families>
     <layout-folder>
-        <layout>Splash.xml</layout>
+        <layout>Start.xml</layout>
         <layout>Game.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>evGame.xml</event-sheet>
-        <event-sheet>evSplash.xml</event-sheet>
+        <event-sheet>GameEvents.xml</event-sheet>
+        <event-sheet>StartScreenEvents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Audio" uid="32">
@@ -662,7 +662,7 @@
             </properties>
         </global-instance>
         <global-instance type="Keyboard" uid="56" />
-        <global-instance type="Mouse" uid="64" />
+        <global-instance type="Mouse" uid="67" />
     </global-instances>
     <sounds-folder>
         <file name="Explosion 3.m4a" />

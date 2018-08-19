@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Splash</name>
+    <name>Start</name>
     <sid>619026129688056</sid>
-    <event-sheet>evSplash</event-sheet>
+    <event-sheet>StartScreenEvents</event-sheet>
     <size>
         <width>640</width>
         <height>480</height>
