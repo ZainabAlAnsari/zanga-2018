@@ -90,6 +90,11 @@
                                             <param id="1" name="Comparison">5</param>
                                             <param id="2" name="Value">MaxStress</param>
                                         </condition>
+                                        <condition id="-14" name="Compare variable" sid="292774002252924" type="System">
+                                            <param id="0" name="Variable">GameOver</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;Yes&quot;</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Play" sid="243043491376691" type="Audio">
@@ -119,6 +124,56 @@
                                             <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
                                         </action>
                                         <action id="-5" name="Set width" sid="102611703759962" type="StressBar">
+                                            <param id="0" name="Width">MaxStress</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="693451903179846">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="135129820874775" type="System">
+                                            <param id="0" name="First value">ClosedBox.Count</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                        <condition id="-8" name="Compare two values" sid="969972382498215" type="System">
+                                            <param id="0" name="First value">OpenBox.Count</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="582130665172924" type="System">
+                                            <param id="0" name="Variable">GameOver</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">&quot;Yes&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="569233521267991" type="Audio">
+                                            <param id="0" name="Audio file">death</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="605795362561662" type="Player" />
+                                        <action id="-9" name="Set value" sid="838767761045609" type="System">
+                                            <param id="0" name="Variable">GameOver</param>
+                                            <param id="1" name="Value">&quot;Yes&quot;</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="977001285648231" type="GameOverText">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="154708297053790" type="GameOverText">
+                                            <param id="0" name="Text">&quot;Game Over!  Press &quot;&quot;Space&quot;&quot; to go back to Splash screen&quot;</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="836432638976344" type="Audio">
+                                            <param id="0" name="Audio file">Gameover</param>
+                                            <param id="2" name="Loop">1</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;GameOverMusic&quot;</param>
+                                        </action>
+                                        <action id="6" name="Stop" sid="278294014484286" type="Audio">
+                                            <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
+                                        </action>
+                                        <action id="-5" name="Set width" sid="424557927940344" type="StressBar">
                                             <param id="0" name="Width">MaxStress</param>
                                         </action>
                                     </actions>
