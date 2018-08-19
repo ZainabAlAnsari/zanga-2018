@@ -553,25 +553,25 @@
                     <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingFront" pingpong="0" repeatcount="1" repeatto="0" sid="467364580598034" speed="6">
+                <animation framecount="4" loop="0" name="WalkingFront" pingpong="0" repeatcount="1" repeatto="0" sid="467364580598034" speed="7">
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.538462" hotspotY="0.489796" />
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.489796" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingBack" pingpong="0" repeatcount="1" repeatto="0" sid="666110407728255" speed="6">
+                <animation framecount="4" loop="0" name="WalkingBack" pingpong="0" repeatcount="1" repeatto="0" sid="666110407728255" speed="7">
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.489796" />
                     <frame duration="1" hotspotX="0.515152" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.535714" hotspotY="0.489796" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="224446477775171" speed="6">
+                <animation framecount="4" loop="0" name="WalkingLeft" pingpong="0" repeatcount="1" repeatto="0" sid="224446477775171" speed="7">
                     <frame duration="1" hotspotX="0.478261" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.521739" hotspotY="0.489796" />
                     <frame duration="1" hotspotX="0.478261" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.541667" hotspotY="0.489796" />
                 </animation>
-                <animation framecount="4" loop="0" name="WalkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="562369926815669" speed="6">
+                <animation framecount="4" loop="0" name="WalkingRight" pingpong="0" repeatcount="1" repeatto="0" sid="562369926815669" speed="7">
                     <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.478261" hotspotY="0.489796" />
                     <frame duration="1" hotspotX="0.521739" hotspotY="0.5" />

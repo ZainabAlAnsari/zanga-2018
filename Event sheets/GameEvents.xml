@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameEvents</name>
     <events>
+        <variable comment="0 = closed, 1 = open" constant="0" name="tempBoxType" sid="411250924540913" static="0" type="number">0</variable>
         <variable constant="0" name="StartStress" sid="363825760955001" static="0" type="number">50</variable>
         <variable constant="0" name="MinStress" sid="866576949527899" static="0" type="number">15</variable>
         <variable constant="0" name="MaxStress" sid="237071619188003" static="0" type="number">80</variable>
@@ -211,7 +212,7 @@
                                             <param id="0" name="Visibility">1</param>
                                         </action>
                                         <action id="0" name="Set text" sid="446112400117500" type="GameWinText">
-                                            <param id="0" name="Text">&quot;Win!!!&quot; &amp; newline &amp; &quot;Press &quot;&quot;Sapce&quot;&quot; to go back to Splash screen&quot;</param>
+                                            <param id="0" name="Text">&quot;Congrats you got rid of the junk in your life!&quot; &amp; newline &amp; &quot;Press &quot;&quot;SPACE&quot;&quot; to go back to start screen&quot;</param>
                                         </action>
                                         <action id="6" name="Stop" sid="479345552539931" type="Audio">
                                             <param id="0" name="Tag">&quot;MattOglesby&quot;</param>
@@ -223,46 +224,22 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="901085167284155">
+                        <event-block sid="515482572989279">
                             <conditions>
-                                <condition id="-6" name="Every X seconds" sid="399616619613015" type="System">
-                                    <param id="0" name="Interval (seconds)">1</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="144367067813303" type="System">
-                                    <param id="0" name="Variable">GameOver</param>
-                                    <param id="1" name="Comparison">1</param>
-                                    <param id="2" name="Value">&quot;Yes&quot;</param>
+                                <condition id="6" name="On object clicked" sid="178222541722324" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">KeepItButton</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-11" name="Add to" sid="452022187866063" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="242784997905087">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="839690959947425" type="Keyboard">
-                                    <param id="0" name="Key">32</param>
-                                </condition>
-                                <condition id="1" name="Is overlapping another object" sid="957966637379214" type="HandleAurora">
-                                    <param id="0" name="Object">ClosedBox</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action disabled="1" id="-9" name="Destroy" sid="169322360365430" type="ClosedBox" />
-                                <action disabled="1" id="-12" name="Subtract from" sid="218435987784376" type="Player">
+                                <action id="-11" name="Add to" sid="821351980149819" type="Player">
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
-                                <action id="-4" name="Set layer visible" sid="864937981383078" type="System">
+                                <action id="-4" name="Set layer visible" sid="362756505402174" type="System">
                                     <param id="0" name="Layer">&quot;Player Options&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="787958078361723" type="System">
-                                    <param id="0" name="Variable">tmpBoxID</param>
-                                    <param id="1" name="Value">ClosedBox.IID</param>
+                                    <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -272,6 +249,11 @@
                                     <param id="0" name="Mouse button">0</param>
                                     <param id="1" name="Click type">0</param>
                                     <param id="2" name="Object clicked">ThrowAwayButton</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="653550492403343" type="System">
+                                    <param id="0" name="Variable">tempBoxType</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -294,6 +276,51 @@
                                     </conditions>
                                     <actions>
                                         <action id="-9" name="Destroy" sid="100306619456319" type="ClosedBox" />
+                                        <action id="-9" name="Set value" sid="258205496603863" type="System">
+                                            <param id="0" name="Variable">tmpBoxID</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="141489298308094">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="592289966381006" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">ThrowAwayButton</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="583323019488322" type="System">
+                                    <param id="0" name="Variable">tempBoxType</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="188792214851984" type="Player">
+                                    <param id="0" name="Instance variable">Stress</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="156743125503761" type="System">
+                                    <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="244361388329449">
+                                    <conditions>
+                                        <condition id="-13" name="Pick nth instance" sid="522211199659884" type="System">
+                                            <param id="0" name="Object">OpenBox</param>
+                                            <param id="1" name="Instance">tmpBoxID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="292904893060310" type="OpenBox" />
+                                        <action id="-9" name="Set value" sid="989269979295954" type="System">
+                                            <param id="0" name="Variable">tmpBoxID</param>
+                                            <param id="1" name="Value">&quot;&quot;</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -308,10 +335,47 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-9" name="Destroy" sid="512460145326798" type="OpenBox" />
-                                <action id="-12" name="Subtract from" sid="920611793815740" type="Player">
-                                    <param id="0" name="Instance variable">Stress</param>
-                                    <param id="1" name="Value">5</param>
+                                <action id="-9" name="Set value" sid="769572869672196" type="System">
+                                    <param id="0" name="Variable">tmpBoxID</param>
+                                    <param id="1" name="Value">OpenBox.IID</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="439282612332954" type="System">
+                                    <param id="0" name="Variable">tempBoxType</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="113957840660665" type="System">
+                                    <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="669347251521248" type="BoxContentText">
+                                    <param id="0" name="Text">OpenBox.Content</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="242784997905087">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="839690959947425" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="957966637379214" type="HandleAurora">
+                                    <param id="0" name="Object">ClosedBox</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="787958078361723" type="System">
+                                    <param id="0" name="Variable">tmpBoxID</param>
+                                    <param id="1" name="Value">ClosedBox.IID</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="665463063683903" type="System">
+                                    <param id="0" name="Variable">tempBoxType</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="864937981383078" type="System">
+                                    <param id="0" name="Layer">&quot;Player Options&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="449251038760340" type="BoxContentText">
+                                    <param id="0" name="Text">ClosedBox.Content</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -319,7 +383,7 @@
                 </event-group>
                 <event-group description="" sid="930684092402241" title="Movement">
                     <sub-events>
-                        <event-group description="" sid="982351489059816" title="ASWD">
+                        <event-group description="" sid="982351489059816" title="WASD">
                             <sub-events>
                                 <event-block sid="531418518716622">
                                     <conditions>
@@ -533,32 +597,11 @@
                     <sub-events>
                         <event-block any="1" sid="101959123325903">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="929222848064281" type="Player">
-                                    <param id="0" name="Object">Bed</param>
+                                <condition id="0" name="On collision with another object" sid="981014908145060" type="Player">
+                                    <param id="0" name="Object">Furniture</param>
                                 </condition>
-                                <condition id="0" name="On collision with another object" sid="823580013785183" type="Player">
-                                    <param id="0" name="Object">LargeTable</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="857603216074795" type="Player">
-                                    <param id="0" name="Object">bedsidetable</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="186325777548636" type="Player">
-                                    <param id="0" name="Object">bookshelves</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="472845490191473" type="Player">
-                                    <param id="0" name="Object">bookshelvesside</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="821454462191663" type="Player">
-                                    <param id="0" name="Object">plant</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="551241919760371" type="Player">
-                                    <param id="0" name="Object">LargeTable</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="860399843652274" type="Player">
-                                    <param id="0" name="Object">ClosedBox</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="949496073220086" type="Player">
-                                    <param id="0" name="Object">OpenBox</param>
+                                <condition id="0" name="On collision with another object" sid="302114397239706" type="Player">
+                                    <param id="0" name="Object">Items</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -579,40 +622,6 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="791537899576959" title="Testing">
-            <sub-events>
-                <event-block sid="715785359608379">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="377063225349256" type="Keyboard">
-                            <param id="0" name="Key">66</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="831706169461344" type="Audio">
-                            <param id="0" name="Audio file">ouch_new</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="954950865431418">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="820997923065274" type="Keyboard">
-                            <param id="0" name="Key">67</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="708416917974840" type="Audio">
-                            <param id="0" name="Audio file">steps</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="147957800026764" title="GameHandling">
