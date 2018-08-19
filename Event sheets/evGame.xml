@@ -97,6 +97,9 @@
                                 <action id="-5" name="Set width" sid="913051621042238" type="test_stress_bar">
                                     <param id="0" name="Width">MaxStress</param>
                                 </action>
+                                <action id="0" name="Set text" sid="498772387141704" type="GameOverText">
+                                    <param id="0" name="Text">&quot;Game Over!  Press any key to go back to Splash screen&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -522,9 +525,7 @@
                 </event-block>
                 <event-block sid="826693244811213">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="858043723963327" type="Keyboard">
-                            <param id="0" name="Key">32</param>
-                        </condition>
+                        <condition id="1" name="On any key pressed" sid="858043723963327" type="Keyboard" />
                     </conditions>
                     <actions />
                     <sub-events>
@@ -538,7 +539,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Go to layout" sid="785755491362467" type="System">
-                                    <param id="0" name="Layout">Game</param>
+                                    <param id="0" name="Layout">Splash</param>
                                 </action>
                             </actions>
                         </event-block>

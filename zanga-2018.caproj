@@ -34,6 +34,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Splash</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -376,6 +377,9 @@
         <object-type name="TextPause" sid="615927692043197">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TextSplash" sid="439899341052271">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families>
         <family name="Furniture" plugin-id="Sprite" sid="630299438734579">
@@ -395,10 +399,12 @@
         </family>
     </families>
     <layout-folder>
+        <layout>Splash.xml</layout>
         <layout>Game.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>evGame.xml</event-sheet>
+        <event-sheet>evSplash.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Audio" uid="31">

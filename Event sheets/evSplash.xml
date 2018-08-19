@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evSplash</name>
+    <events>
+        <event-block sid="203109620494771">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="966988142515072" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="294109261155493" type="TextSplash">
+                    <param id="0" name="Text">&quot;Stress Minimalizer&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="423258611727806" type="TextSplash">
+                    <param id="0" name="Text">&quot;Welcome to the game&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="973632100193736" type="TextSplash">
+                    <param id="0" name="Text">&quot;Aim: reduce the stress to win, otherwise it increases until game over&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="379481740832330" type="TextSplash">
+                    <param id="0" name="Text">&quot;Conrols&quot; &amp; newline &amp; &quot;Arrow keys, ASDW keys&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="761494830228148" type="TextSplash">
+                    <param id="0" name="Text">&quot;P to pause&quot; &amp; newline</param>
+                </action>
+                <action id="1" name="Append text" sid="468833186850203" type="TextSplash">
+                    <param id="0" name="Text">newline &amp; &quot;Space to start&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="873415096800386">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="217233788012840" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="156421075712870" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
