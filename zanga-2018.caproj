@@ -264,7 +264,116 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder name="Items" />
+        <object-folder name="Items">
+            <object-type name="laptop" sid="412141416405684">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219927575768405" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\laptop.png">
+                            <collision-poly>
+                                <point x="0.0177515" y="0.0166667" />
+                                <point x="0.5" y="0.00277778" />
+                                <point x="0.982249" y="0.0166667" />
+                                <point x="0.997041" y="0.5" />
+                                <point x="0.985207" y="0.986111" />
+                                <point x="0.0118343" y="0.988889" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="OpenBox" sid="748982496753691">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390732461463671" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503401" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D0.png">
+                            <collision-poly>
+                                <point x="0.328358" y="0.29932" />
+                                <point x="0.5" y="0.183673" />
+                                <point x="0.671642" y="0.29932" />
+                                <point x="0.865672" y="0.428572" />
+                                <point x="0.865672" y="0.768707" />
+                                <point x="0.5" y="0.993197" />
+                                <point x="0.134328" y="0.761905" />
+                                <point x="0.141791" y="0.442177" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D1.png">
+                            <collision-poly>
+                                <point x="0.202899" y="0.294118" />
+                                <point x="0.623188" y="0.147059" />
+                                <point x="0.73913" y="0.32353" />
+                                <point x="0.818841" y="0.5" />
+                                <point x="0.818841" y="0.816176" />
+                                <point x="0.369565" y="0.977941" />
+                                <point x="0.173913" y="0.691176" />
+                                <point x="0.181159" y="0.433823" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D3.png">
+                            <collision-poly>
+                                <point x="0.289855" y="0.276119" />
+                                <point x="0.362319" y="0.156716" />
+                                <point x="0.73913" y="0.268657" />
+                                <point x="0.797101" y="0.544776" />
+                                <point x="0.76087" y="0.753731" />
+                                <point x="0.652174" y="0.992537" />
+                                <point x="0.181159" y="0.858209" />
+                                <point x="0.173913" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D4.png">
+                            <collision-poly>
+                                <point x="0.308824" y="0.308219" />
+                                <point x="0.5" y="0.19863" />
+                                <point x="0.676471" y="0.30137" />
+                                <point x="0.852941" y="0.452055" />
+                                <point x="0.860294" y="0.760274" />
+                                <point x="0.5" y="0.993151" />
+                                <point x="0.139706" y="0.773973" />
+                                <point x="0.169118" y="0.410959" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D5.png">
+                            <collision-poly>
+                                <point x="0.123894" y="0.356164" />
+                                <point x="0.628319" y="0.226027" />
+                                <point x="0.672566" y="0.253425" />
+                                <point x="0.893805" y="0.5" />
+                                <point x="0.902655" y="0.842466" />
+                                <point x="0.690266" y="0.90411" />
+                                <point x="0.353982" y="0.979452" />
+                                <point x="0.115044" y="0.698629" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D7.png">
+                            <collision-poly>
+                                <point x="0.298077" y="0.215278" />
+                                <point x="0.461538" y="0.25" />
+                                <point x="0.73077" y="0.305556" />
+                                <point x="0.913462" y="0.361111" />
+                                <point x="0.923077" y="0.694445" />
+                                <point x="0.692307" y="0.979167" />
+                                <point x="0.0769231" y="0.881944" />
+                                <point x="0.0961538" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503817" hotspotY="0.503401" original-source="C:\Users\zaina\Desktop\Open Box\open-box_D8.png">
+                            <collision-poly>
+                                <point x="0.465649" y="0.183673" />
+                                <point x="0.671756" y="0.29932" />
+                                <point x="0.862595" y="0.414966" />
+                                <point x="0.870229" y="0.768707" />
+                                <point x="0.496183" y="0.986395" />
+                                <point x="0.122137" y="0.782313" />
+                                <point x="0.10687" y="0.496599" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
             <instance-variables>
@@ -324,24 +433,6 @@
         <object-type name="Keyboard" sid="589593691325715">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="laptop" sid="412141416405684">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219927575768405" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\laptop.png">
-                        <collision-poly>
-                            <point x="0.0177515" y="0.0166667" />
-                            <point x="0.5" y="0.00277778" />
-                            <point x="0.982249" y="0.0166667" />
-                            <point x="0.997041" y="0.5" />
-                            <point x="0.985207" y="0.986111" />
-                            <point x="0.0118343" y="0.988889" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families>
         <family name="Furniture" plugin-id="Sprite" sid="630299438734579">
@@ -355,6 +446,19 @@
             </members>
             <behaviors>
                 <behavior-type name="Solid" sid="424905440481669">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Items" plugin-id="Sprite" sid="674784858656563">
+            <members>
+                <member>OpenBox</member>
+            </members>
+            <instance-variables>
+                <instance-variable comment="what&apos;s inside the box?" name="Content" sid="373256394325098" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="930320350914421">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
