@@ -344,7 +344,7 @@
                                     <param id="0" name="Instance variable">Stress</param>
                                     <param id="1" name="Value">5</param>
                                 </action>
-                                <action id="-5" name="Set width" sid="707564358494965" type="test_stress_bar">
+                                <action id="-5" name="Set width" sid="707564358494965" type="StressBar">
                                     <param id="0" name="Width">Player.Stress</param>
                                 </action>
                             </actions>
