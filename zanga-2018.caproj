@@ -379,14 +379,10 @@
                     <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887506579340848" speed="0">
                         <frame duration="1" hotspotX="0.502591" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D0.png">
                             <collision-poly>
-                                <point x="0.0103627" y="0.360215" />
-                                <point x="0.507772" y="0.016129" />
-                                <point x="0.792746" y="0.215054" />
-                                <point x="0.989637" y="0.370968" />
-                                <point x="0.989637" y="0.645161" />
-                                <point x="0.497409" y="1" />
-                                <point x="0.207254" y="0.784946" />
-                                <point x="0" y="0.623656" />
+                                <point x="0.0829016" y="0.290323" />
+                                <point x="0.50259" y="0" />
+                                <point x="0.932642" y="0.317205" />
+                                <point x="0.528497" y="0.623656" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\Closed Box\open-box_D1.png">
