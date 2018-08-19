@@ -641,7 +641,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>GameBoy</Content>
+                        <Content>GameBoy Color, just in case you&apos;ll feel like ditching the PS4 someday</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -737,7 +737,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Stuffed teddy bears and rabbits. Why do you even have these?</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -769,7 +769,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Clothes</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -801,7 +801,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>The expensive painting kit </Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -897,7 +897,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Over a hundred books. Admit it, you&apos;ll never read these</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -961,7 +961,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Electronic gadgets you haven&apos;t used in years</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1025,7 +1025,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>So much stationary you&apos;ll probably die before using them all</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1089,7 +1089,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Lots of clothes</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
