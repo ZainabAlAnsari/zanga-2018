@@ -212,7 +212,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="bookshelves" sid="682787378957257">
+            <object-type name="Bookshelves" sid="682787378957257">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877059058158078" speed="5">
@@ -227,7 +227,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="bookshelvesside" sid="483933789433688">
+            <object-type name="Bookshelves_side" sid="483933789433688">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391273539378137" speed="5">
@@ -242,7 +242,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="bedsidetable" sid="375127463112136">
+            <object-type name="BedSideTable" sid="375127463112136">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616137837549463" speed="5">
@@ -259,7 +259,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="plant" sid="214627309321231">
+            <object-type name="Plant" sid="214627309321231">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887836878127431" speed="5">
@@ -320,7 +320,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="KitchenCabinet_Bottom_D" sid="919208849010279">
+            <object-type name="KitchenCabinet" sid="919208849010279">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247686454440574" speed="5">
@@ -335,7 +335,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="TrashCan_D" sid="254177522700412">
+            <object-type name="TrashCan" sid="254177522700412">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562155619742628" speed="5">
@@ -356,7 +356,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Items">
-            <object-type name="laptop" sid="412141416405684">
+            <object-type name="Laptop" sid="412141416405684">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219927575768405" speed="5">
@@ -671,15 +671,15 @@
         <family name="Furniture" plugin-id="Sprite" sid="630299438734579">
             <members>
                 <member>Bed</member>
-                <member>bedsidetable</member>
-                <member>bookshelves</member>
-                <member>bookshelvesside</member>
+                <member>BedSideTable</member>
+                <member>Bookshelves</member>
+                <member>Bookshelves_side</member>
                 <member>Fridge</member>
-                <member>KitchenCabinet_Bottom_D</member>
+                <member>KitchenCabinet</member>
                 <member>LargeTable</member>
                 <member>Oven</member>
-                <member>plant</member>
-                <member>TrashCan_D</member>
+                <member>Plant</member>
+                <member>TrashCan</member>
             </members>
             <behaviors>
                 <behavior-type name="Solid" sid="424905440481669">
