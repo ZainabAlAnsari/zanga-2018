@@ -25,7 +25,9 @@
         <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -625,6 +627,11 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                </effect-type>
+            </effects>
         </family>
     </families>
     <layout-folder>
