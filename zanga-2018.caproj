@@ -161,21 +161,6 @@
                 <texture original-source="D:\Projects\Zanga-2018\Files\RoomTilemap.png" />
                 <tiles />
             </object-type>
-            <object-type name="rug" sid="149305815940097">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278733401446153" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\rug.png">
-                            <collision-poly>
-                                <point x="0.000994036" y="0.00234742" />
-                                <point x="0.999006" y="0.00234742" />
-                                <point x="0.999006" y="0.997653" />
-                                <point x="0" y="1" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="FloorTile" sid="588594729069912">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\zaina\Desktop\floortile.png" />
@@ -279,6 +264,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Items" />
         <object-type name="Player" sid="199508114855291">
             <plugin id="Sprite" />
             <instance-variables>
@@ -337,6 +323,24 @@
         </object-type>
         <object-type name="Keyboard" sid="589593691325715">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="laptop" sid="412141416405684">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219927575768405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\zaina\Desktop\laptop.png">
+                        <collision-poly>
+                            <point x="0.0177515" y="0.0166667" />
+                            <point x="0.5" y="0.00277778" />
+                            <point x="0.982249" y="0.0166667" />
+                            <point x="0.997041" y="0.5" />
+                            <point x="0.985207" y="0.986111" />
+                            <point x="0.0118343" y="0.988889" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
