@@ -577,7 +577,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Party equipment for all the parties you don&apos;t have time to hold.</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -589,8 +589,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>304</x>
-                        <y>400</y>
+                        <x>176</x>
+                        <y>320</y>
                         <z>0</z>
                         <width>56.458950043</width>
                         <height>54.411216736</height>
@@ -609,7 +609,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Bags, and more bags</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -673,7 +673,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>A pile of plastic bags so old some started tearing</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -705,7 +705,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Random Amazon impulse purchase </Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -769,7 +769,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>Clothes</Content>
+                        <Content>Fancy clothes from your teenage years</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -801,7 +801,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>The expensive painting kit </Content>
+                        <Content>Wait, is that mold?</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -833,7 +833,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Music records from the 70&apos;s that you haven&apos;t listened to in 20 years because the player broke</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -865,7 +865,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Some wigs</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -929,7 +929,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Expensive art supplies for the hobby you never started</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -993,7 +993,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Expensive dusty shoes you never wear except for what&apos;s on your feet right now</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -1057,7 +1057,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Content>stuff</Content>
+                        <Content>Broken china</Content>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Solid">
